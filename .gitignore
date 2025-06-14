@@ -2,4 +2,5 @@
 *.pyc  
 # Ignore temporary directories created by Python's import system  
 __pycache__  
-
+# Ignore venv
+/.venv/
