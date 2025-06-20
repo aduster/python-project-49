@@ -2,8 +2,9 @@ from brain_games import cli
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    cli.welcome_user()  
+    # Get user_name from func welcome_user
+    user_name = cli.welcome_user()
+    print(f"Hello, {user_name}!") 
 
 
 if __name__ == "__main__":
