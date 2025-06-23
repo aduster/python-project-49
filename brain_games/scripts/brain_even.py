@@ -51,6 +51,7 @@ def main():
             print(f"'{user_answer}' is wrong answer ;(.", end=" ")
             print(f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
+            break
         elif correct_answer == user_answer:
             print("Correct!")
             correct_answer_count += 1
