@@ -23,17 +23,49 @@ def gen_expression():
     return f"{str(gen_random_num())} {action} {str(gen_random_num())}"    
 
 
-def get_answer_user():
+def get_user_answer():
     ''' Get answer user from input string and return him'''
-    user_answer = prompt.string('Your answer: ')
+    user_answer = prompt.integer('Your answer: ')
     return user_answer
+
+
+def get_correct_answer(string_expression):
+    list_expression = string_expression.split()
+    left_operand, action, right_operand = [*list_expression]
+    match action:
+        case "+":
+            return int(left_operand) + int(right_operand)
+        case "-":
+            return int(left_operand) - int(right_operand)
+        case "*":
+            return int(left_operand) * int(right_operand) 
+        case _:
+            return None
+
 
 def main():
     # Get user_name from func welcome_user
     user_name = welcome_user()
     print('What is the result of the expression?')
-    expression = gen_expression()
-    print(f"Question: {expression}")
+    # The game begin now, and finish win after 3 correct answer
+    correct_answer_count = 0
+    while correct_answer_count < 3:
+        string_expression = gen_expression()
+        print(f"Question: {string_expression}")
+        user_answer = int(get_user_answer())
+        correct_answer = get_correct_answer(string_expression)        
+        if user_answer == correct_answer:
+            print("Correct!")
+            correct_answer_count += 1
+            continue
+        else:
+            print(f"'{user_answer}' is wrong answer ;(.", end=" ")
+            print(f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}!")
+            break
+    else:
+        print(f"Congratulations, {user_name}!")       
+
 
 if __name__ == "__main__":
     main()  
