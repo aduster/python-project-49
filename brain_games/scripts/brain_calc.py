@@ -20,7 +20,7 @@ def gen_random_num():
 def gen_expression():
     ACTIONS = ("+", "-", "*")
     action = random.choice(ACTIONS)
-    return f"{str(gen_random_num())} {action} {str(gen_random_num())}"    
+    return f"{str(gen_random_num())} {action} {str(gen_random_num())}"
 
 
 def get_user_answer():
