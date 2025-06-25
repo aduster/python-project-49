@@ -11,6 +11,3 @@
 
 ### How run brain-calc?
 [![asciicast](https://asciinema.org/a/724517.svg)](https://asciinema.org/a/724517)
-
-#### Picture brain-calc
-<a href="https://asciinema.org/a/724517" target="_blank"><img src="https://asciinema.org/a/724517.svg" /></a>
