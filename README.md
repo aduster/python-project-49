@@ -6,5 +6,11 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=aduster_python-project-49)](https://sonarcloud.io/summary/new_code?id=aduster_python-project-49)
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=aduster_python-project-49)
 
-### Run script brain-even (scrincast asciinema.org)
+### How run brain-even? 
 [![asciicast](https://asciinema.org/a/724172.svg)](https://asciinema.org/a/724172)
+
+### How run brain-calc?
+[![asciicast](https://asciinema.org/a/724517.svg)](https://asciinema.org/a/724517)
+
+#### Picture brain-calc
+<a href="https://asciinema.org/a/724517" target="_blank"><img src="https://asciinema.org/a/724517.svg" /></a>
