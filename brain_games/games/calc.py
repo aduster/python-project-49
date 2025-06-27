@@ -23,12 +23,13 @@ def get_question():
 def get_correct_answer(expression):
     list_expression = expression.split()
     left_operand, action, right_operand = [*list_expression]
+    left_operand, right_operand = int(left_operand), int(right_operand)
     match action:
         case "+":
-            return int(left_operand) + int(right_operand)
+            return left_operand + right_operand
         case "-":
-            return int(left_operand) - int(right_operand)
+            return left_operand - right_operand
         case "*":
-            return int(left_operand) * int(right_operand) 
+            return left_operand * right_operand 
         case _:
             return None

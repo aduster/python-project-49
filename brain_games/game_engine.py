@@ -15,10 +15,14 @@ def get_user_answer():
 
 
 def is_win(user_answer, correct_answer):
-    return user_answer == correct_answer
+    if correct_answer in ("yes", "no"):
+        return user_answer == correct_answer
+    else:
+        return int(user_answer) == correct_answer 
 
 
 def get_result_game(user_name, correct_answer, user_answer, win_count):
+    # Win after thee correct answer in a row
     if win_count == 3:
         print(f"Congratulations, {user_name}!")
     else:
@@ -27,8 +31,8 @@ def get_result_game(user_name, correct_answer, user_answer, win_count):
         print(f"Let's try again, {user_name}!")
 
 
-def start_game(name_game):
-    # User greeting and save your name
+def game_process(name_game):
+    # User greeting and save name
     user_name = welcome_user()
     # Tell the rules of the game
     print(name_game.game_rules())
