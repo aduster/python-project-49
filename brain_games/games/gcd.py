@@ -35,9 +35,3 @@ def get_correct_answer(question):
         else:
             right_number = right_number % left_number 
     return left_number + right_number
-
-
-def get_comparison(user_answer, correct_answer):
-    return user_answer == correct_answer
-
-
