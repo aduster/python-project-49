@@ -15,7 +15,7 @@ def get_question():
     ''' Create question and return him'''
     ACTIONS = ("+", "-", "*")
     action = random.choice(ACTIONS)
-    expression = f"{str(get_random_num())} {action} {str(get_random_num())}"
+    expression = f"{get_random_num()} {action} {get_random_num()}"
     print(f"Question: {expression}")
     return expression
 

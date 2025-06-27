@@ -1,7 +1,5 @@
 import random
 
-import prompt
-
 
 def game_rules():
     return "Find the greatest common divisor of given numbers."
@@ -17,12 +15,6 @@ def get_question():
     string_two_numbers = f"{str(get_random_num())} {str(get_random_num())}"
     print(f"Question: {string_two_numbers}")
     return string_two_numbers
-
-
-def get_user_answer():
-    ''' Get answer user from input string and return him'''
-    user_answer = prompt.integer('Your answer: ')
-    return user_answer
 
 
 def get_correct_answer(question):
