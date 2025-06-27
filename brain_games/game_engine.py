@@ -9,6 +9,11 @@ def welcome_user():
     return user_name
 
 
+def get_user_answer():
+    ''' Get answer user from input string and return him'''
+    return prompt.string('Your answer: ')
+
+
 def is_win(user_answer, correct_answer):
     return user_answer == correct_answer
 
@@ -31,7 +36,7 @@ def start_game(name_game):
     win_count = 0
     while win_count < 3:
         question = name_game.get_question()
-        user_answer = name_game.get_user_answer()
+        user_answer = get_user_answer()
         correct_answer = name_game.get_correct_answer(question)
         if is_win(user_answer, correct_answer):
             print("Correct!")
