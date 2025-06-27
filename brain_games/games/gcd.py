@@ -7,14 +7,14 @@ def game_rules():
     return "Find the greatest common divisor of given numbers."
 
 
-def gen_random_num():
+def get_random_num():
     ''' Generate random number and return him'''
     display_number = random.randint(1, 100)
     return display_number
 
 
 def get_question():
-    string_two_numbers = f"{str(gen_random_num())} {str(gen_random_num())}"
+    string_two_numbers = f"{str(get_random_num())} {str(get_random_num())}"
     print(f"Question: {string_two_numbers}")
     return string_two_numbers
 
