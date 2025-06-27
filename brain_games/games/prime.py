@@ -6,6 +6,7 @@ def game_rules():
 
 
 def get_question():
+    ''' Create question and return him'''
     one_number = str(random.randint(1, 100))
     print(f"Question: {one_number}")
     return one_number

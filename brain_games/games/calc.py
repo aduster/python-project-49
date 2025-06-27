@@ -1,7 +1,5 @@
 import random
 
-import prompt
-
 
 def game_rules():
     return "What is the result of the expression?"
@@ -14,17 +12,12 @@ def get_random_num():
 
 
 def get_question():
+    ''' Create question and return him'''
     ACTIONS = ("+", "-", "*")
     action = random.choice(ACTIONS)
     expression = f"{str(get_random_num())} {action} {str(get_random_num())}"
     print(f"Question: {expression}")
     return expression
-
-
-def get_user_answer():
-    ''' Get answer user from input string and return him'''
-    user_answer = prompt.integer('Your answer: ')
-    return user_answer
 
 
 def get_correct_answer(expression):
