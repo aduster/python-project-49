@@ -19,10 +19,12 @@ def get_question():
     for index in range(10):
         current = start + index * step
         progression.append(current)
+    correct_answer = progression[missing_index]
     progression[missing_index] = ".."  
-    print(f"Question: ", end = " ")
-    return progression
+    print("Question:", end=" ")
+    print(*progression)
+    return correct_answer
 
 
 def get_correct_answer(question):
-    
+    return question    
