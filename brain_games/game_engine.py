@@ -42,12 +42,11 @@ def game_process(name_game):
         question = name_game.get_question()
         user_answer = get_user_answer()
         correct_answer = name_game.get_correct_answer(question)
-        if is_win(user_answer, correct_answer):
-            print("Correct!")
-            win_count += 1
-            continue
-        else:
+        if not is_win(user_answer, correct_answer):
             break
+        else:
+            win_count += 1
+            print("Correct!")
     # Now let's sum up the game
     get_result_game(user_name, correct_answer, user_answer, win_count)        
     

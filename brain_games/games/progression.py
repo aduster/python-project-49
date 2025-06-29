@@ -12,8 +12,8 @@ def get_random_number(start, stop):
 
 
 def get_question():
-    start = get_random_number(1, 11)
-    step = get_random_number(1, 9)
+    start = get_random_number(1, 25)
+    step = get_random_number(1, 15)
     missing_index = get_random_number(1, 9)
     progression = []
     for index in range(10):
