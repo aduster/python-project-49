@@ -28,6 +28,8 @@ make install
 
 ```bash
 brain-even
+Welcome to the Brain Games!
+May I have your name?
 ```
 ## Examples
 
