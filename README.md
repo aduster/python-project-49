@@ -45,5 +45,3 @@ brain-even
 
 ### How work brain-progression?
 [![asciicast](https://asciinema.org/a/nxI4XKGT7mFVAFcz45SJWa0yA.svg)](https://asciinema.org/a/nxI4XKGT7mFVAFcz45SJWa0yA)
-
-<script src="https://asciinema.org/a/725198.js" id="asciicast-725198" async="true"></script>
